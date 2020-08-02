@@ -1,0 +1,40 @@
+.buttons {
+  margin-top: 30px;
+
+  &__button {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--save {
+      border: 2px solid limegreen;
+
+      &:hover {
+        background-color: limegreen;
+      }
+
+      &:disabled {
+        border-color: gray;
+
+        &:hover {
+          background-color: white;
+        }
+      }
+    }
+
+    &--clear {
+      border: 2px solid indianred;
+      margin-left: 20px;
+
+      &:hover {
+        background-color: indianred;
+      }
+    }
+  }
+}

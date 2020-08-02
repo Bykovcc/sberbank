@@ -1,0 +1,24 @@
+.hint {
+
+  &__list {
+    border: black 1px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 306px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  }
+
+  &__string:not(:first-child) {
+    border-top: black 1px solid;
+  }
+
+  &__string {
+    padding: 10px 0 10px 10px;
+    margin: 0;
+
+    &:hover {
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

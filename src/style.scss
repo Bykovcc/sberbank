@@ -1,0 +1,48 @@
+$bp-phone: 414px;
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  background-color: white;
+  color: #000;
+}
+
+.app {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 23px;
+  margin: 10px 0;
+
+  @media(min-width: $bp-phone) {
+    font-size: 30px;
+  }
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+
+  &::placeholder {
+    font-size: 16px;
+    color: lightgray;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@import 'styles/hint';
+@import 'styles/telephone';
+@import 'styles/buttons';
